@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Website Project Tasks</h1>
+        <div id="task-form">
+            <label for="task-title">Task Title:</label>
+            <input type="text" id="task-title" required>
+            <label for="task-deadline">Deadline:</label>
+            <input type="date" id="task-deadline" required>
+            <label for="task-priority">Priority:</label>
+            <select id="task-priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <label for="task-labels">Labels:</label>
+            <input type="text" id="task-labels">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div id="task-list">
+            <!-- Task items will be displayed here -->
+        </div>
+    </div>
+
+    <script src="action.js"></script>
+</body>
+</html>
